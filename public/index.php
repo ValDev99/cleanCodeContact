@@ -1,6 +1,6 @@
 <?php
-require_once "../config/co_bdd.php";
-require_once "../classes/ContactManager.php" ;
+use config\co_bdd;
+use classes\ContactManager ;
 
 $contactManager = new ContactManager($pdo);
 
@@ -31,7 +31,7 @@ if (isset($_GET['delete'])) {
 
 $contacts = $contactManager->getAllContacts();
 
-include_once '../views/header.php';
-include_once '../views/contactsList.php';
-include_once '../views/footer.php';
+use views\header;
+use views\contactsList;
+use views\footer;
 
