@@ -8,7 +8,7 @@
         <input type="text" id="phonenumber" name="phonenumber" value="<?= htmlspecialchars($contactToEdit['phonenumber']) ?>" required>
         <button type="submit">Modifier</button>
     </form>
-    <a href="index.php">Annuler la modification</a> <!-- Lien pour annuler la modification et revenir à l'ajout -->
+    <a href="index.php">Annuler la modification</a>
 <?php else: ?>
     <h2>Ajouter un Nouveau Contact</h2>
     <form method="post" action="">
