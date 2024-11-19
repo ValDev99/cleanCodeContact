@@ -1,6 +1,6 @@
 <?php
-require ('../config/co_bdd.php');
-require ('../classes/ContactManager.php') ;
+require_once "../config/co_bdd.php";
+require_once "../classes/ContactManager.php" ;
 
 $contactManager = new ContactManager($pdo);
 
@@ -31,8 +31,7 @@ if (isset($_GET['delete'])) {
 
 $contacts = $contactManager->getAllContacts();
 
-include '../views/header.php';
-include '../views/contactsList.php';
-include '../views/footer.php';
+include_once '../views/header.php';
+include_once '../views/contactsList.php';
+include_once '../views/footer.php';
 
-// test pour sonarqube
