@@ -34,3 +34,5 @@ $contacts = $contactManager->getAllContacts();
 include '../views/header.php';
 include '../views/contactsList.php';
 include '../views/footer.php';
+
+// test pour sonarqube
